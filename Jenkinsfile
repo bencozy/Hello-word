@@ -8,17 +8,17 @@ pipeline {
     stages {
         stage("init") {
             steps {
-//                 script {
+                script {
 //                    gv = load "script.groovy" 
-//                 }
+                }
             }
         }
         stage("build") {
-//             steps {
+            steps {
 //                 script {
 //                     gv.buildApp()
 //                 }
-//             }
+             }
         }
         stage("test") {
 //             when {
@@ -26,18 +26,18 @@ pipeline {
 //                     params.executeTests
 //                 }
 //             }
-//             steps {
+             steps {
 //                 script {
 //                     gv.testApp()
-//                 }
-//             }
+//                }
+            }
         }
         stage("deploy") {
-//             steps {
+             steps {
 //                 script {
 //                     gv.deployApp()
 //                 }
-//             }
+             }
         }
     }   
 }
